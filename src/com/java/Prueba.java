@@ -5,10 +5,6 @@
 package com.java;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import javax.swing.UIManager;
-import javax.swing.Icon;
-import java.awt.EventQueue;
-import java.awt.HeadlessException;
 
 /**
  *
@@ -24,8 +20,8 @@ public class Prueba extends JFrame {
     public static void main(String[] args) {
         // TODO code application logic here
          
-        Vehiculo mazda = new Vehiculo(); //instancia de objeto
-        mazda.setColor("Rojo");
+        Vehiculo mazda = new Vehiculo("Verde"); //instancia de objeto
+        //mazda.setColor("Rojo");
    
         Prueba p = new Prueba();
         p.mostrarMensaje("El color es:" + mazda.getColor());
